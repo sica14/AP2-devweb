@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atletas Botafogo 2024-1</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <script type="module" src="js/outro.js" defer></script>
+</head>
+<body>
+    <div class="header">
+        <img src="image.png" alt="Botafogo Logo">
+        <h1>Atletas Botafogo 2024-1</h1>
+        <button id="btn_sair" class="logout">Sair</button>
+    </div>
+    <div class="atletas-container">
+        <div class="filters">
+            <select id="filter_select">
+                <option value="all">Elenco Completo</option>
+                <option value="masculino">Masculino</option>
+                <option value="feminino">Feminino</option>
+            </select>
+            <button id="filter_all">Elenco Completo</button>
+            <button id="filter_masc">Masculino</button>
+            <button id="filter_fem">Feminino</button>
+        </div>
+        <input type="text" id="searchBar" placeholder="BUSQUE POR NOME">
+        <div id="atletas_list">Carregando...</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botafogo - Atletas</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+</head>
+<body>
+    <div class="login-container">
+        <div class="title">Bem-vindo ao Portal de Atletas do Botafogo</div>
+        <p>Para acessar a área exclusiva dos atletas, por favor, faça o login abaixo.</p>
+        <input type="password" id="password" placeholder="Digite sua senha">
+        <button id="btn_login">Entrar</button>
+        <div class="senha-dica">Dica: a senha é "senha"</div>
+    </div>
+    <script>
+        document.getElementById('btn_login').onclick = () => {
+            const password = document.getElementById('password').value;
+            if (password === 'senha') {
+                sessionStorage.setItem('logado', 'true');
+                window.location.href = 'outra.html';
+            } else {
+                alert('Senha incorreta.');
+            }
+        };
+    </script>
+</body>
+</html>
